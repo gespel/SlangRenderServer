@@ -1,1 +1,0 @@
-x = wavetableosc(strangeone, 110);
