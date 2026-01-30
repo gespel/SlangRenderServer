@@ -1,0 +1,13 @@
+*build/
+test
+*.o
+*.so
+**/.idea/
+*.dSYM
+.idea/
+slang
+.vscode
+.vs
+*.DS_Store
+.cache
+slang-standalone-host
