@@ -1,3 +1,7 @@
 [submodule "Slang"]
 	path = Slang
 	url = https://github.com/gespel/Slang
+[submodule "subprojects/Slang"]
+	path = subprojects/Slang
+	url = https://github.com/gespel/Slang
+	branch = main
