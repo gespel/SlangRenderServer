@@ -11,7 +11,7 @@ project(
 
 # Subprojekt Slang
 slang_subproject = subproject('Slang')
-slang_lib = slang_subproject.get_variable('slang_lib')
+slang_dep = slang_subproject.get_variable('slang_dep')
 
 # RenderServer Sources
 server_sources = [
@@ -26,8 +26,7 @@ server_headers = [
 render_server = executable(
   'SlangRenderServer',
   server_sources,
-  include_directories: include_directories('subprojects/Slang/core/include', 'subprojects/Slang/modules'),
-  link_with: slang_lib,
+  dependencies: slang_dep,
   link_args: ['-lm'],
   install: true
 )
